@@ -2,7 +2,7 @@ name: Test
 "on":
   push:
     branches:
-      - master
+      - main
       - renovate/**
   pull_request:
     types:
@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 18
+          - lts/*
         os:
           - ubuntu-latest
     runs-on: "${{ matrix.os }}"
