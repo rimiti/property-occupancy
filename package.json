@@ -1,0 +1,44 @@
+{
+  "name": "@rimiti/property-occupancy",
+  "version": "1.0.0",
+  "description": "Property occupancy calculator.",
+  "license": "MIT",
+  "author": "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "dayjs": "1.11.7",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.17",
+    "@types/jest": "29.5.1",
+    "@types/lodash": "4.14.194",
+    "@typescript-eslint/eslint-plugin": "5.59.2",
+    "@typescript-eslint/parser": "5.59.2",
+    "eslint": "8.39.0",
+    "eslint-config-prettier": "8.8.0",
+    "jest": "29.5.0",
+    "mockdate": "^3.0.5",
+    "prettier": "2.8.8",
+    "ts-jest": "29.1.0",
+    "typescript": "5.0.4"
+  },
+  "scripts": {
+    "clean": "rm -rf dist coverage",
+    "build:clean": "yarn clean && yarn build",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "yarn prettier && yarn eslint",
+    "lint:fix": "yarn prettier:fix && yarn eslint:fix",
+    "prettier": "prettier --check '{src,__tests__}/**/*.ts'",
+    "prettier:fix": "prettier --write '{src,__tests__}/**/*.ts'",
+    "eslint": "eslint {src,__tests__}/**/*.ts",
+    "eslint:fix": "eslint --fix {src,__tests__}/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}

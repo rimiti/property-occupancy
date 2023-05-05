@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getOccupancyRateByDay should return the correct occupancy rate by day 1`] = `
+[
+  {
+    "date": "2023-05-01",
+    "occupancyRate": 10,
+  },
+  {
+    "date": "2023-05-02",
+    "occupancyRate": 10,
+  },
+  {
+    "date": "2023-05-03",
+    "occupancyRate": 0,
+  },
+  {
+    "date": "2023-05-04",
+    "occupancyRate": 10,
+  },
+  {
+    "date": "2023-05-05",
+    "occupancyRate": 10,
+  },
+  {
+    "date": "2023-05-06",
+    "occupancyRate": 0,
+  },
+]
+`;
+
+exports[`getOccupancyRateByMonth returns correct occupancy rates by month 1`] = `
+[
+  {
+    "date": "2022-01",
+    "occupancyRate": 6.45,
+  },
+  {
+    "date": "2022-02",
+    "occupancyRate": 7.14,
+  },
+]
+`;
